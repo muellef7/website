@@ -39,7 +39,7 @@ const Header = () => (
             p: 0,
           }}
         >
-          <li sx={{ mx: 3, py: 4 }}>
+          <li sx={{ mx: 3, py: [3, 4, 4] }}>
             <Styled.a
               as={Link}
               sx={{ color: 'text', fontWeight: 'bold' }}
@@ -48,7 +48,7 @@ const Header = () => (
               Home
             </Styled.a>
           </li>
-          <li sx={{ mx: 3, py: 4 }}>
+          <li sx={{ mx: 3, py: [3, 4, 4] }}>
             <Styled.a
               as={Link}
               sx={{ color: 'text', fontWeight: 'bold' }}
@@ -57,7 +57,7 @@ const Header = () => (
               Kontakt
             </Styled.a>
           </li>
-          <li sx={{ mx: 3, py: 4 }}>
+          <li sx={{ mx: 3, py: [3, 4, 4] }}>
             <Styled.a
               as={Link}
               sx={{ color: 'text', fontWeight: 'bold' }}
