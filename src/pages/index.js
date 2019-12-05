@@ -127,11 +127,20 @@ const IndexPage = ({ data, location, navigate }) => (
               </Styled.p>
               <Styled.p>
                 Als Supervisorin, Coach und Organisationsberaterin arbeite ich
-                nach den Grundsätzen des ÖAGG (Österreichischer Arbeitskreis für
-                Gruppentherapie und Gruppendynamik) und bin ÖVS
-                (Österreichischer Vereinigung für Supervision) akkreditiert.
-                Meiner langjährigen Erfahrung als Prozesstrainerin geht der TTL
-                (Tutoriumsprojekt Trainer*innen Lehrgang) voraus.
+                nach den Grundsätzen des{' '}
+                <Styled.a href="https://www.oeagg.at/">
+                  ÖAGG (Österreichischer Arbeitskreis für Gruppentherapie und
+                  Gruppendynamik)
+                </Styled.a>{' '}
+                und bin Mitglied der{' '}
+                <Styled.a href="https://www.oevs.or.at/mitglieder/mueller-uri-fanny/">
+                  ÖVS (Österreichischer Vereinigung für Supervision)
+                </Styled.a>
+                . Meiner langjährigen Erfahrung als Prozesstrainerin geht der{' '}
+                <Styled.a href="https://etut.oeh.ac.at/trainer_innenliste/">
+                  TTL (Tutoriumsprojekt Trainer*innen Lehrgang)
+                </Styled.a>{' '}
+                voraus.
               </Styled.p>
             </div>
           </div>
@@ -288,6 +297,9 @@ const IndexPage = ({ data, location, navigate }) => (
           </div>
           <div
             sx={{
+              borderBottomColor: 'subtle',
+              borderBottomStyle: 'solid',
+              borderBottomWidth: 2,
               py: [5, 5, 6],
               px: [4, 5, 6],
               position: 'relative',
@@ -325,6 +337,43 @@ const IndexPage = ({ data, location, navigate }) => (
               Trainings, die diesen Bereichen nahe sind an. Das geht von
               Workshops zu den Themen Rassismus, Migration und Flucht über
               Kampagnenplanung bis hin zu Schreibcoachings für Studierende.
+            </Styled.p>
+          </div>
+          <div
+            sx={{
+              py: [5, 5, 6],
+              px: [4, 5, 6],
+              position: 'relative',
+              '&::before': {
+                position: 'absolute',
+                width: '100vw',
+                content: '""',
+                height: '100%',
+                bg: 'inherit',
+                top: 0,
+                right: '100%',
+                display: 'none',
+              },
+              '&::after': {
+                position: 'absolute',
+                width: '100vw',
+                content: '""',
+                height: '100%',
+                bg: 'inherit',
+                top: 0,
+                left: '100%',
+              },
+            }}
+          >
+            <Styled.h2 as="h4" sx={{ display: 'flex', alignItems: 'center' }}>
+              <span sx={{ color: 'primary' }}>
+                <Icon icon="arrowRight" sx={{ mr: 3 }} />
+              </span>
+              Diversity Zertifikate
+            </Styled.h2>
+            <Styled.p>
+              Basierend auf kritischen Diversity Konzepten stelle ich Workshops
+              speziell für die Anforderungen der Klient*innen zusammen.
             </Styled.p>
           </div>
         </div>
