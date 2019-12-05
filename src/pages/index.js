@@ -402,6 +402,37 @@ const IndexPage = ({ data, location, navigate }) => (
         </div>
       </section>
 
+      <section
+        sx={{
+          bg: 'subtle',
+        }}
+      >
+        <div
+          sx={{
+            maxWidth: 'container.regular',
+            mx: 'auto',
+            px: 3,
+            py: 5,
+          }}
+        >
+          <Styled.h1 as="h3">Praxis</Styled.h1>
+          <Styled.p>So siehts aus bei uns:</Styled.p>
+          <div sx={{ display: 'flex' }}>
+            {data.praxisFolder.nodes.map((image, i) => (
+              <div
+                sx={{
+                  flex: 1,
+                  '& > div.gatsby-image-wrapper': { height: '100%' },
+                }}
+                key={i}
+              >
+                <Image fluid={image.childImageSharp.fluid} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section>
         <div
           sx={{
@@ -445,6 +476,18 @@ export const query = graphql`
           duotone: { highlight: "#f6f9fc", shadow: "#162020", opacity: 100 }
         ) {
           ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    praxisFolder: allFile(filter: { relativeDirectory: { eq: "praxis" } }) {
+      nodes {
+        childImageSharp {
+          fluid(
+            maxWidth: 600
+            duotone: { highlight: "#f6f9fc", shadow: "#162020", opacity: 100 }
+          ) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
     }
