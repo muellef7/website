@@ -94,7 +94,7 @@ const IndexPage = ({ data, location, navigate }) => (
             <strong>Fanny Müller-Uri</strong>
           </div>
           <div>
-            <Styled.h1 as="h3">Meine Prozessbegleitung</Styled.h1>
+            <Styled.h1 as="h3">Prozessbegleitung</Styled.h1>
             <div sx={{ columnCount: [1, 1, 2] }}>
               <Styled.p>
                 Meine beraterische Tätigkeit ist auf die Klient*innen
@@ -128,16 +128,25 @@ const IndexPage = ({ data, location, navigate }) => (
               <Styled.p>
                 Als Supervisorin, Coach und Organisationsberaterin arbeite ich
                 nach den Grundsätzen des{' '}
-                <Styled.a href="https://www.oeagg.at/">
+                <Styled.a
+                  href="https://www.oeagg.at/"
+                  rel="noopener noreferrer"
+                >
                   ÖAGG (Österreichischer Arbeitskreis für Gruppentherapie und
                   Gruppendynamik)
                 </Styled.a>{' '}
                 und bin Mitglied der{' '}
-                <Styled.a href="https://www.oevs.or.at/mitglieder/mueller-uri-fanny/">
+                <Styled.a
+                  href="https://www.oevs.or.at/mitglieder/mueller-uri-fanny/"
+                  rel="noopener noreferrer"
+                >
                   ÖVS (Österreichischer Vereinigung für Supervision)
                 </Styled.a>
                 . Meiner langjährigen Erfahrung als Prozesstrainerin geht der{' '}
-                <Styled.a href="https://etut.oeh.ac.at/trainer_innenliste/">
+                <Styled.a
+                  href="https://etut.oeh.ac.at/trainer_innenliste/"
+                  rel="noopener noreferrer"
+                >
                   TTL (Tutoriumsprojekt Trainer*innen Lehrgang)
                 </Styled.a>{' '}
                 voraus.

@@ -29,6 +29,7 @@ const AboutPage = ({ location }) => (
             lineHeight: 'large',
           }}
         >
+          <span>Praxis Dichterhof e.U.</span>
           <span>Fanny Müller-Uri</span>
           <span>Brunnengasse 42</span>
           <span>1160 Wien</span>
