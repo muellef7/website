@@ -4,6 +4,7 @@ const baseColors = {
   grey: {
     200: '#f3f4f4',
     300: '#eee',
+    500: '#ccc',
     700: '#6e797a',
   },
   green: {
@@ -88,7 +89,7 @@ const theme = {
       variant: 'text.body',
     },
     a: {
-      color: 'primary',
+      color: 'inherit',
       textDecoration: 'none',
       transition: 'color 0.2s ease-out',
       '&:hover': {
