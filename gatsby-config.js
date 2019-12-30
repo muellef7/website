@@ -22,6 +22,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-mdx',
+    'gatsby-plugin-netlify',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-plugin-theme-ui',
