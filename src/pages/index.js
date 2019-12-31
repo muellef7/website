@@ -91,6 +91,9 @@ const ContentWrapper = styled('div')(
     borderBottomWidth: 2,
     py: 5,
     px: [4, 5, 6],
+    '&:last-of-type': {
+      borderBottomColor: 'transparent',
+    },
   })
 )
 
@@ -233,11 +236,7 @@ const IndexPage = ({ data, location, navigate }) => (
               Kampagnenplanung bis hin zu Schreibcoachings für Studierende.
             </Paragraph>
           </ContentWrapper>
-          <ContentWrapper
-            sx={{
-              borderBottomColor: 'transparent', // FIXME:
-            }}
-          >
+          <ContentWrapper>
             <Subheading>Diversity Zertifikate</Subheading>
             <Paragraph>
               Basierend auf kritischen Diversity Konzepten stelle ich Workshops
