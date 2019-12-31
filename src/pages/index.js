@@ -24,9 +24,12 @@ const Hero = styled('section')(
 
 const HeroImageWrapper = styled('div')(
   css({
-    inset: 0,
+    bottom: 0,
+    left: 0,
     opacity: 0.2,
     position: 'absolute',
+    right: 0,
+    top: 0,
     '& > div.gatsby-image-wrapper': { height: '100%', width: '100%' },
   })
 )
