@@ -351,6 +351,8 @@ const IndexPage = ({ data, location, navigate }) => (
                 sx={{
                   flex: 1,
                   minWidth: 0,
+                  transition: 'transform 0.2s ease',
+                  '&:hover': { transform: 'scale(1.25)', zIndex: 10 },
                   '& > div.gatsby-image-wrapper': { height: '100%' },
                 }}
                 key={i}
