@@ -33,7 +33,7 @@ const Input = styled('input')(
     p: 3,
     transition: 'border-color 0.2s ease-out',
     ':focus': {
-      borderColor: 'primary',
+      borderColor: 'blue.900',
     },
   })
 )

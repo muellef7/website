@@ -71,7 +71,7 @@ const Heading = props => <Styled.h1 as="h3" {...props} />
 
 const Subheading = ({ children, ...props }) => (
   <Styled.h2 as="h4" sx={{ alignItems: 'center', display: 'flex' }} {...props}>
-    <span sx={{ color: 'primary' }}>
+    <span sx={{ color: 'blue.900' }}>
       <Icon icon="arrowRight" sx={{ mr: 3 }} />
     </span>
     {children}
@@ -80,9 +80,7 @@ const Subheading = ({ children, ...props }) => (
 
 const Paragraph = Styled.p
 
-const Link = props => (
-  <Styled.a rel="noopener noreferrer" sx={{ color: 'grey.500' }} {...props} />
-)
+const Link = props => <Styled.a rel="noopener noreferrer" {...props} />
 
 const ContentWrapper = styled('div')(
   css({
@@ -109,7 +107,7 @@ const IndexPage = ({ data, location, navigate }) => (
         <Subtitle>Organisationsberatung. Supervision. Training.</Subtitle>
       </Hero>
 
-      <section sx={{ bg: 'green.1000', color: 'white' }}>
+      <section sx={{ bg: 'blue.900', color: 'white' }}>
         <Container
           sx={{
             display: 'flex',
@@ -301,6 +299,7 @@ export const query = graphql`
       childImageSharp {
         fixed(
           width: 200
+          quality: 100
           duotone: { highlight: "#ffffff", shadow: "#002838", opacity: 100 }
         ) {
           ...GatsbyImageSharpFixed_withWebp

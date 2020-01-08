@@ -4,8 +4,8 @@ import { css } from 'theme-ui'
 const Button = styled('button')(
   css({
     appearance: 'none',
-    bg: 'primary',
-    borderColor: 'primary',
+    bg: 'blue.900',
+    borderColor: 'blue.900',
     borderRadius: 2,
     borderStyle: 'solid',
     borderWidth: 2,
@@ -19,7 +19,7 @@ const Button = styled('button')(
     textDecoration: 'none',
     transition: 'background-color 0.2s ease-out',
     ':hover': {
-      bg: 'primaryHover',
+      bg: 'blue.800',
     },
   })
 )

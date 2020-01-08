@@ -2,6 +2,18 @@
 import { Link } from 'gatsby'
 import { jsx, Styled } from 'theme-ui'
 
+const NavLink = props => (
+  <Styled.a
+    as={Link}
+    sx={{
+      color: 'blue.900',
+      fontWeight: 'bold',
+      '&:hover': { color: 'blue.800' },
+    }}
+    {...props}
+  />
+)
+
 const Header = () => (
   <header
     sx={{
@@ -19,15 +31,6 @@ const Header = () => (
         mx: 'auto',
       }}
     >
-      {/* <nav>
-        <Styled.a
-          as={Link}
-          sx={{ color: 'text', fontWeight: 'bold', px: 4 }}
-          to="/"
-        >
-          Praxis Dichterhof
-        </Styled.a>
-      </nav> */}
       <nav>
         <ul
           sx={{
@@ -40,31 +43,13 @@ const Header = () => (
           }}
         >
           <li sx={{ mx: 3, py: [3, 4, 4] }}>
-            <Styled.a
-              as={Link}
-              sx={{ color: 'text', fontWeight: 'bold' }}
-              to="/"
-            >
-              Home
-            </Styled.a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li sx={{ mx: 3, py: [3, 4, 4] }}>
-            <Styled.a
-              as={Link}
-              sx={{ color: 'text', fontWeight: 'bold' }}
-              to="/contact"
-            >
-              Kontakt
-            </Styled.a>
+            <NavLink to="/contact">Kontakt</NavLink>
           </li>
           <li sx={{ mx: 3, py: [3, 4, 4] }}>
-            <Styled.a
-              as={Link}
-              sx={{ color: 'text', fontWeight: 'bold' }}
-              to="/about"
-            >
-              Impressum
-            </Styled.a>
+            <NavLink to="/about">Impressum</NavLink>
           </li>
         </ul>
       </nav>

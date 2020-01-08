@@ -7,34 +7,22 @@ const baseColors = {
     500: '#ccc',
     700: '#6e797a',
   },
-  green: {
-    400: '#2bb656',
-    500: '#0ca750',
-    800: '#006b40',
-    1000: '#002838',
-  },
-  violet: {
-    400: '#816fea',
-    500: '#6f5ed3',
-    900: '#2d246b',
-  },
-  turqois: {
-    400: '#33d6e2',
-    500: '#17B8ce',
-    600: '#0797ae',
-    700: '#0f6e84',
-    900: '#083d4f',
-  },
   blue: {
     100: '#f6f9fc',
+    800: '#003246',
+    900: '#002838',
+  },
+  yellow: {
+    600: '#dfc220',
+    700: '#ffd700',
   },
 }
 
 const colors = {
   ...baseColors,
   background: baseColors.white,
-  primary: baseColors.green['500'],
-  primaryHover: baseColors.green['400'],
+  primary: baseColors.yellow['700'],
+  primaryHover: baseColors.yellow['600'],
   subtle: baseColors.blue['100'],
   text: baseColors.black,
 }
@@ -89,7 +77,7 @@ const theme = {
       variant: 'text.body',
     },
     a: {
-      color: 'inherit',
+      color: 'primary',
       textDecoration: 'none',
       transition: 'color 0.2s ease-out',
       '&:hover': {
