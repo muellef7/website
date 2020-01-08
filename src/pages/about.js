@@ -62,6 +62,7 @@ const AboutPage = ({ location }) => (
           <Styled.a
             href="mailto:fanny@mueller-uri.at"
             rel="noopener noreferrer"
+            sx={{ color: 'text', '&:hover': { color: 'blue.800' } }}
           >
             fanny@mueller-uri.at
           </Styled.a>
