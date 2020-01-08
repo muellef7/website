@@ -71,7 +71,7 @@ const Heading = props => <Styled.h1 as="h3" {...props} />
 
 const Subheading = ({ children, ...props }) => (
   <Styled.h2 as="h4" sx={{ alignItems: 'center', display: 'flex' }} {...props}>
-    <span sx={{ color: 'blue.900' }}>
+    <span sx={{ color: 'blue.900', display: 'inline-flex' }}>
       <Icon icon="arrowRight" sx={{ mr: 3 }} />
     </span>
     {children}
