@@ -15,6 +15,7 @@ const baseColors = {
   yellow: {
     600: '#dfc220',
     700: '#ffd700',
+    900: '#b29600',
   },
 }
 

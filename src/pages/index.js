@@ -82,6 +82,10 @@ const Paragraph = Styled.p
 
 const Link = props => <Styled.a rel="noopener noreferrer" {...props} />
 
+const LinkLight = props => (
+  <Link {...props} sx={{ color: 'yellow.900', '&:hover': { color: 'text' } }} />
+)
+
 const ContentWrapper = styled('div')(
   css({
     borderBottomColor: 'subtle',
@@ -108,6 +112,37 @@ const IndexPage = ({ data, location, navigate }) => (
       </Hero>
 
       <section sx={{ bg: 'blue.900', color: 'white' }}>
+        <Container>
+          <Heading>Mein Zugang</Heading>
+          <div sx={{ columnCount: [1, 1, 2] }}>
+            <Paragraph>
+              Meine beraterische Tätigkeit ist auf die Klient*innen
+              zugeschnitten, lösungs- und ressourcenorientiert.
+            </Paragraph>
+            <Paragraph>
+              Zentral für mich sind die Wahrnehmung und Reflexion eigener
+              Entwicklungen am Arbeitsplatz, um sich wirksam zu organisieren und
+              die eigene Rolle zu finden, stets mit einem Blick auf die
+              Gesellschaft. Dies gilt für Organisationen ebenso wie für Teams,
+              Gruppen und Einzelpersonen.
+            </Paragraph>
+            <Paragraph>
+              Ich arbeite methodenintegrativ, setze meine Schwerpunkte
+              allerdings in den Techniken der{' '}
+              <Link href="http://www.gddg.at/gddg/methode/gruppendynamik">
+                Gruppendynamik
+              </Link>{' '}
+              und jenen des{' '}
+              <Link href="http://www.psychodrama-austria.at/psychodrama/psychodrama-methode/">
+                Psychodramas
+              </Link>
+              .
+            </Paragraph>
+          </div>
+        </Container>
+      </section>
+
+      <section sx={{ bg: 'subtle' }}>
         <Container
           sx={{
             display: 'flex',
@@ -130,55 +165,85 @@ const IndexPage = ({ data, location, navigate }) => (
             <strong>Fanny Müller-Uri</strong>
           </div>
           <div>
-            <Heading>Prozessbegleitung</Heading>
+            <Heading>Über mich</Heading>
             <div sx={{ columnCount: [1, 1, 2] }}>
               <Paragraph>
-                Meine beraterische Tätigkeit ist auf die Klient*innen
-                zugeschnitten, lösungs- und ressourcenorientiert.
+                Kollektive, Gruppen und neue Organisationsformen interessieren
+                mich nicht nur privat und beruflich, sondern auch politisch.
               </Paragraph>
               <Paragraph>
-                Zentral für mich sind die Wahrnehmung und Reflexion eigener
-                Entwicklungen am Arbeitsplatz, um sich wirksam zu organisieren
-                und die eigene Rolle zu finden, stets mit einem Blick auf die
-                Gesellschaft. Dies gilt für Organisationen ebenso wie für Teams,
-                Gruppen und Einzelpersonen.
+                Lebe und arbeite in Wien Ottakring und im{' '}
+                <LinkLight href="https://muehlenikitsch.net/">
+                  Burgenland
+                </LinkLight>{' '}
+                mit Kind und kollektiv, so gut es geht.
               </Paragraph>
               <Paragraph>
-                Ich arbeite methodenintegrativ, setze meine Schwerpunkte
-                allerdings in den Techniken der{' '}
-                <Link href="http://www.gddg.at/gddg/methode/gruppendynamik">
-                  Gruppendynamik
-                </Link>{' '}
-                und jenen des{' '}
-                <Link href="http://www.psychodrama-austria.at/psychodrama/psychodrama-methode/">
-                  Psychodramas
-                </Link>
-                .
+                Die Arbeit mit Gruppen hat bereits in meiner Studienzeit an der
+                Uni begonnen – zuerst als Tutorin, dann als Lektorin, als freie
+                Trainerin am Berufsförderungsinstitut und seit 2013 als freie
+                Prozessmoderation und -trainerin in der Erwachsenen- wie
+                politischen Bildung, wie seit 2017 auch als
+                Organisationberaterin, Supervisorin und Coach.
               </Paragraph>
               <Paragraph>
-                Als Supervisorin, Coach und Organisationsberaterin arbeite ich
-                nach den Grundsätzen des{' '}
-                <Link href="https://www.oeagg.at/">
-                  ÖAGG (Österreichischer Arbeitskreis für Gruppentherapie und
-                  Gruppendynamik)
-                </Link>{' '}
-                und bin Mitglied der{' '}
-                <Link href="https://www.oevs.or.at/mitglieder/mueller-uri-fanny/">
-                  ÖVS (Österreichischer Vereinigung für Supervision)
-                </Link>
-                . Meiner langjährigen Erfahrung als Prozesstrainerin geht der{' '}
-                <Link href="https://etut.oeh.ac.at/trainer_innenliste/">
-                  TTL (Tutoriumsprojekt Trainer*innen Lehrgang)
-                </Link>{' '}
-                voraus.
+                Politisch war ich selbst in unterschiedlichen Gruppen
+                organisiert, war in studentischen Interessensvertretungen aktiv
+                und bin es noch in sozialen Bewegungen. Soziale Fragen aus
+                feministischen und antirassistischen Perspektiven anzugehen sind
+                für mich dabei zentral. Die für mich größten Fragen aktueller
+                rassistischer Diskriminierungsformen habe ich 2014 versucht in
+                einem{' '}
+                <LinkLight href="https://www.mandelbaum.at/buch.php?id=491&menu=buecher">
+                  Buch zu antimuslimischem Rassismus
+                </LinkLight>{' '}
+                zu beantworten.
+              </Paragraph>
+              <Paragraph>
+                Die Neugier auf Gruppenprozesse und gesellschaftpolitische
+                Herausforderungen begleiten deshalb auch eine beraterische
+                Tätigkeit.
               </Paragraph>
             </div>
           </div>
         </Container>
       </section>
 
+      <section sx={{ bg: 'blue.900', color: 'white' }}>
+        <Container>
+          <Heading>Praxisprofil</Heading>
+          <div sx={{ columnCount: [1, 1, 2] }}>
+            <Paragraph>
+              Als Supervisorin, Coach und Organisationsberaterin arbeite ich
+              nach den Grundsätzen des{' '}
+              <Link href="https://www.oeagg.at/">
+                ÖAGG (Österreichischer Arbeitskreis für Gruppentherapie und
+                Gruppendynamik)
+              </Link>{' '}
+              und bin Mitglied der{' '}
+              <Link href="https://www.oevs.or.at/mitglieder/mueller-uri-fanny/">
+                ÖVS (Österreichischer Vereinigung für Supervision)
+              </Link>
+              . Meiner langjährigen Erfahrung als Prozesstrainerin geht der{' '}
+              <Link href="https://etut.oeh.ac.at/trainer_innenliste/">
+                TTL (Tutoriumsprojekt Trainer*innen Lehrgang)
+              </Link>{' '}
+              voraus. Gewerblich bin ich eingetragene Unternehmensberaterin
+              (einschließlich Unternehmensorganisation, eingeschränkt auf
+              Supervision und Coaching, GISA-Register 31929097) und Mitglied im{' '}
+              <Link href="https://www.wko.at/branchen/w/information-consulting/unternehmensberatung-buchhaltung-informationstechnologie/start.html">
+                Fachverband Unternehmensberatung, Buchhaltung und
+                Informationstechnologie der Wirtschaftskammer Wien
+              </Link>
+              .
+            </Paragraph>
+          </div>
+        </Container>
+      </section>
+
       <section>
-        {/* <h3></h3> */}
+        {/* <h3>Angebote</h3> */}
+        {/* Beratungsangebote, Trainings, Diversity-Zertifikate */}
         <Container>
           <ContentWrapper>
             <Subheading>
@@ -226,6 +291,9 @@ const IndexPage = ({ data, location, navigate }) => (
               Trainings, Sensibilisierungsarbeit und Schreibcoaching
             </Subheading>
             <Paragraph>
+              Zur Zeit auf Anfrage, konkrete Termine folgen.
+            </Paragraph>
+            <Paragraph>
               Meiner langjährigen Arbeit in der Rassismusforschung, in
               studentischen Interessensvertretungen und meinem
               gesellschaftspolitischen Engagement zufolge, biete ich auch
@@ -237,8 +305,17 @@ const IndexPage = ({ data, location, navigate }) => (
           <ContentWrapper>
             <Subheading>Diversity Zertifikate</Subheading>
             <Paragraph>
-              Basierend auf kritischen Diversity Konzepten stelle ich Workshops
-              speziell für die Anforderungen der Klient*innen zusammen.
+              Zur Zeit auf Anfrage, konkrete Termine folgen.
+            </Paragraph>
+            <Paragraph>
+              Basierend auf kritischen Diversity Konzepten stelle ich gemeinsam
+              mit{' '}
+              <LinkLight href="http://www.claudia-albrecht.at/">
+                Claudia Albrecht
+              </LinkLight>{' '}
+              Workshops speziell für die Anforderungen der Klient*innen
+              zusammen, die den österreichischen Arbeitsmarkt-Standards
+              entsprechen.
             </Paragraph>
           </ContentWrapper>
         </Container>
@@ -246,12 +323,17 @@ const IndexPage = ({ data, location, navigate }) => (
 
       <section sx={{ bg: 'subtle' }}>
         <Container>
-          <Heading>Settings</Heading>
+          <Heading>Settings und Preise</Heading>
           <Paragraph>
             Ob für Organisationsberatung, Supervision, Training oder Coaching
             werden wir uns gemeinsame Ziele setzen und Intervalle von einer
             Stunde bis hin zu einem wöchentlichen, monatlichen oder mehrjährigen
             Prozess vereinbaren.
+          </Paragraph>
+          <Paragraph>
+            Preise orientieren sich an den Richtlinien der ÖVS und sind an die
+            Anforderungen meiner Klient*innen angepasst. Sozialtarife auf
+            Anfrage!
           </Paragraph>
         </Container>
       </section>
@@ -259,6 +341,7 @@ const IndexPage = ({ data, location, navigate }) => (
       <section sx={{ bg: 'subtle' }}>
         <Container>
           <Heading>Praxis</Heading>
+          <Paragraph>Der Zugang zu meiner Praxis ist barrierefrei.</Paragraph>
           <Paragraph>So siehts aus bei uns:</Paragraph>
           <div sx={{ display: 'flex' }}>
             {data.praxisFolder.nodes.map((image, i) => (
