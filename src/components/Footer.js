@@ -48,7 +48,7 @@ const Footer = () => (
           href="https://www.google.at/maps/place/Brunnengasse+42,+1160+Wien/@48.2101188,16.3337701,17z/"
           rel="noopener noreferrer"
         >
-          Brunnengasse 42, 1160 Wien
+          Brunnengasse 42/Grundsteingasse 22, 1160 Wien
         </Styled.a>
       </div>
       <div sx={{ display: 'flex', alignItems: 'center' }}>

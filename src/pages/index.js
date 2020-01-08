@@ -211,7 +211,7 @@ const IndexPage = ({ data, location, navigate }) => (
 
       <section sx={{ bg: 'blue.900', color: 'white' }}>
         <Container>
-          <Heading>Praxisprofil</Heading>
+          <Heading>Mein Praxisprofil</Heading>
           <div sx={{ columnCount: [1, 1, 2] }}>
             <Paragraph>
               Als Supervisorin, Coach und Organisationsberaterin arbeite ich
