@@ -200,8 +200,8 @@ const IndexPage = ({ data, location, navigate }) => (
                 zu beantworten.
               </Paragraph>
               <Paragraph>
-                Die Neugier auf Gruppenprozesse und gesellschaftpolitische
-                Herausforderungen begleiten deshalb auch eine beraterische
+                Die Neugier auf Gruppenprozesse und gesellschaftspolitische
+                Herausforderungen begleiten deshalb auch meine beraterische
                 Tätigkeit.
               </Paragraph>
             </div>
