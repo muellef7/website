@@ -341,8 +341,9 @@ const IndexPage = ({ data, location, navigate }) => (
       <section sx={{ bg: 'subtle' }}>
         <Container>
           <Heading>Praxis</Heading>
-          <Paragraph>Der Zugang zu meiner Praxis ist barrierefrei.</Paragraph>
-          <Paragraph>So siehts aus bei uns:</Paragraph>
+          <Paragraph>
+            Der Zugang zur Praxis ist barrierefrei. So siehts hier aus:
+          </Paragraph>
           <div sx={{ display: 'flex' }}>
             {data.praxisFolder.nodes.map((image, i) => (
               <div
