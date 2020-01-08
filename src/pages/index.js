@@ -91,8 +91,8 @@ const ContentWrapper = styled('div')(
     borderBottomColor: 'subtle',
     borderBottomStyle: 'solid',
     borderBottomWidth: 2,
-    py: 5,
-    px: [4, 5, 6],
+    py: [4, 5, 5],
+    px: [3, 5, 6],
     '&:last-of-type': {
       borderBottomColor: 'transparent',
     },
@@ -344,11 +344,13 @@ const IndexPage = ({ data, location, navigate }) => (
           <Paragraph>
             Der Zugang zur Praxis ist barrierefrei. So siehts hier aus:
           </Paragraph>
+          {/* <div sx={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)' }}> */}
           <div sx={{ display: 'flex' }}>
             {data.praxisFolder.nodes.map((image, i) => (
               <div
                 sx={{
                   flex: 1,
+                  minWidth: 0,
                   '& > div.gatsby-image-wrapper': { height: '100%' },
                 }}
                 key={i}

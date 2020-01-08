@@ -47,7 +47,7 @@ const theme = {
     heading: 1.125,
     large: 2,
   },
-  fontSizes: [12, 14, 16, 18, 20, 24, 32, 44, 64, 72],
+  fontSizes: [12, 14, 16, 17, 20, 24, 32, 44, 64, 72],
   radii: [0, 2, 4, 8],
   sizes: {
     container: {
