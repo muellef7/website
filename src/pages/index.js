@@ -70,12 +70,18 @@ const Container = styled('div')(
 const Heading = props => <Styled.h1 as="h3" {...props} />
 
 const Subheading = ({ children, ...props }) => (
-  <Styled.h2 as="h4" sx={{ alignItems: 'center', display: 'flex' }} {...props}>
-    <span sx={{ color: 'blue.900', display: 'inline-flex' }}>
-      <Icon icon="arrowRight" sx={{ mr: 3 }} />
-    </span>
-    {children}
-  </Styled.h2>
+  <summary sx={{ listStyle: 'none' }}>
+    <Styled.h2
+      as="h4"
+      sx={{ alignItems: 'center', display: 'flex', mb: 0 }}
+      {...props}
+    >
+      <span sx={{ color: 'blue.900', display: 'inline-flex' }}>
+        <Icon icon="arrowRight" sx={{ mr: 3 }} />
+      </span>
+      {children}
+    </Styled.h2>
+  </summary>
 )
 
 const Paragraph = Styled.p
@@ -86,7 +92,7 @@ const LinkLight = props => (
   <Link {...props} sx={{ color: 'yellow.900', '&:hover': { color: 'text' } }} />
 )
 
-const ContentWrapper = styled('div')(
+const ContentWrapper = styled('details')(
   css({
     borderBottomColor: 'subtle',
     borderBottomStyle: 'solid',
@@ -249,7 +255,7 @@ const IndexPage = ({ data, location, navigate }) => (
             <Subheading>
               Organisationsberatung und Organisationsentwicklung
             </Subheading>
-            <Paragraph>
+            <Paragraph sx={{ mt: 4 }}>
               Gemeinsam entwickeln wir ein Design, das Vision,
               Organisationsstruktur und -kultur unter Dach und Fach bringt. Das
               reicht von Change-Prozessen, Zukunfsfähigkeit,
@@ -266,7 +272,7 @@ const IndexPage = ({ data, location, navigate }) => (
           </ContentWrapper>
           <ContentWrapper>
             <Subheading>Konfliktbearbeitung</Subheading>
-            <Paragraph>
+            <Paragraph sx={{ mt: 4 }}>
               Wir stellen uns die Fragen wem der Konflikt nützt, was die eigenen
               Konflikterfahrungen und -gewohnheiten sind, ob Loslassen und
               Verabschieden an der Reihe sind und wie ein selbstorganisiertes
@@ -277,7 +283,7 @@ const IndexPage = ({ data, location, navigate }) => (
           </ContentWrapper>
           <ContentWrapper>
             <Subheading>Supervision und Coaching</Subheading>
-            <Paragraph>
+            <Paragraph sx={{ mt: 4 }}>
               Hier schaffen wir zusammen einen Raum der Reflexion. Mit dem Fokus
               auf das berufliche Umfeld erarbeiten wir ein klares Verständnis
               von Funktion und Rolle und eröffnen ein Feld für
@@ -290,7 +296,7 @@ const IndexPage = ({ data, location, navigate }) => (
             <Subheading>
               Trainings, Sensibilisierungsarbeit und Schreibcoaching
             </Subheading>
-            <Paragraph>
+            <Paragraph sx={{ mt: 4 }}>
               Zur Zeit auf Anfrage, konkrete Termine folgen.
             </Paragraph>
             <Paragraph>
@@ -304,7 +310,7 @@ const IndexPage = ({ data, location, navigate }) => (
           </ContentWrapper>
           <ContentWrapper>
             <Subheading>Diversity Zertifikate</Subheading>
-            <Paragraph>
+            <Paragraph sx={{ mt: 4 }}>
               Zur Zeit auf Anfrage, konkrete Termine folgen.
             </Paragraph>
             <Paragraph>
