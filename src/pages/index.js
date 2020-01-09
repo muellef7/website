@@ -172,11 +172,11 @@ const IndexPage = ({ data, location, navigate }) => (
                 mich nicht nur privat und beruflich, sondern auch politisch.
               </Paragraph>
               <Paragraph>
-                Lebe und arbeite in Wien Ottakring und im{' '}
+                Ich lebe und arbeite in Wien und im{' '}
                 <LinkLight href="https://muehlenikitsch.net/">
                   Burgenland
                 </LinkLight>{' '}
-                mit Kind und kollektiv, so gut es geht.
+                mit Kind und Kollektiv, so gut es geht.
               </Paragraph>
               <Paragraph>
                 Die Arbeit mit Gruppen hat bereits in meiner Studienzeit an der
