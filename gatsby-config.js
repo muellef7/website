@@ -21,7 +21,7 @@ module.exports = {
         path: './src/images',
       },
     },
-    'gatsby-plugin-mdx',
+    // 'gatsby-plugin-mdx',
     'gatsby-plugin-netlify',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
