@@ -19,7 +19,7 @@ const ContactPage = ({ location, navigate }) => (
       <Styled.p>
         Wenn Ihr Fragen zu meinem Angebot habt, oder ein Erstgespräch wünscht,
         dann füllt gerne das Kontaktformular aus oder meldet euch telefonisch
-        unter 0664-2418950.
+        unter 0664&nbsp;-&nbsp;2418950.
       </Styled.p>
       <ContactForm navigate={navigate} />
     </main>

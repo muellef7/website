@@ -323,23 +323,6 @@ const IndexPage = ({ data, location, navigate }) => (
 
       <section sx={{ bg: 'subtle' }}>
         <Container>
-          <Heading>Settings und Preise</Heading>
-          <Paragraph>
-            Ob für Organisationsberatung, Supervision, Training oder Coaching
-            werden wir uns gemeinsame Ziele setzen und Intervalle von einer
-            Stunde bis hin zu einem wöchentlichen, monatlichen oder mehrjährigen
-            Prozess vereinbaren.
-          </Paragraph>
-          <Paragraph>
-            Preise orientieren sich an den Richtlinien der ÖVS und sind an die
-            Anforderungen meiner Klient*innen angepasst. Sozialtarife auf
-            Anfrage!
-          </Paragraph>
-        </Container>
-      </section>
-
-      <section sx={{ bg: 'subtle' }}>
-        <Container>
           <Heading>Praxis</Heading>
           <Paragraph>
             Der Zugang zur Praxis ist barrierefrei. So siehts hier aus:
@@ -364,13 +347,30 @@ const IndexPage = ({ data, location, navigate }) => (
         </Container>
       </section>
 
+      <section sx={{ bg: 'subtle' }}>
+        <Container>
+          <Heading>Settings und Preise</Heading>
+          <Paragraph>
+            Ob für Organisationsberatung, Supervision, Training oder Coaching
+            werden wir uns gemeinsame Ziele setzen und Intervalle von einer
+            Stunde bis hin zu einem wöchentlichen, monatlichen oder mehrjährigen
+            Prozess vereinbaren.
+          </Paragraph>
+          <Paragraph>
+            Preise orientieren sich an den Richtlinien der ÖVS und sind an die
+            Anforderungen meiner Klient*innen angepasst. Sozialtarife auf
+            Anfrage!
+          </Paragraph>
+        </Container>
+      </section>
+
       <section>
         <Container>
           <Heading>Kontakt</Heading>
           <Paragraph>
             Wenn Ihr Fragen zu meinem Angebot habt, oder ein Erstgespräch
             wünscht, dann füllt gerne das Kontaktformular aus oder meldet euch
-            telefonisch unter 0664-2418950.
+            telefonisch unter 0664&nbsp;-&nbsp;2418950.
           </Paragraph>
           <ContactForm navigate={navigate} />
         </Container>
