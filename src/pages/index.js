@@ -121,8 +121,8 @@ const IndexPage = ({ data, location, navigate }) => (
             </Paragraph>
             <Paragraph>
               Zentral für mich sind die Wahrnehmung und Reflexion eigener
-              Entwicklungen am Arbeitsplatz, um sich wirksam zu organisieren und
-              die eigene Rolle zu finden, stets mit einem Blick auf die
+              Entwicklungen am Arbeitsplatz, um sich wirksam organisieren und
+              die eigene Rolle finden zu können, stets mit einem Blick auf die
               Gesellschaft. Dies gilt für Organisationen ebenso wie für Teams,
               Gruppen und Einzelpersonen.
             </Paragraph>
@@ -176,28 +176,28 @@ const IndexPage = ({ data, location, navigate }) => (
                 <LinkLight href="https://muehlenikitsch.net/">
                   Burgenland
                 </LinkLight>{' '}
-                mit Kind und Kollektiv, so gut es geht.
+                mit Kind und Kollektiv und allen damit verbundenen
+                Herausforderungen.
               </Paragraph>
               <Paragraph>
-                Die Arbeit mit Gruppen hat bereits in meiner Studienzeit an der
-                Uni begonnen – zuerst als Tutorin, dann als Lektorin, als freie
-                Trainerin am Berufsförderungsinstitut und seit 2013 als freie
-                Prozessmoderation und -trainerin in der Erwachsenen- wie
-                politischen Bildung, wie seit 2017 auch als
-                Organisationberaterin, Supervisorin und Coach.
+                Die Begeisterung für die Arbeit mit Gruppen hat bereits in
+                meiner Studienzeit an der Uni begonnen – zuerst als Tutorin,
+                später als Lektorin. Am Berufsförderungsinstitut war ich als
+                freie Trainerin tätig, seit 2013 arbeite ich in der Erwachsenen-
+                wie politischen Bildung als freie Prozesstrainerin. Seit 2017
+                bin ich Organisationberaterin, Supervisorin und Coach.
               </Paragraph>
               <Paragraph>
-                Politisch war ich selbst in unterschiedlichen Gruppen
-                organisiert, war in studentischen Interessensvertretungen aktiv
-                und bin es noch in sozialen Bewegungen. Soziale Fragen aus
-                feministischen und antirassistischen Perspektiven anzugehen sind
-                für mich dabei zentral. Die für mich größten Fragen aktueller
-                rassistischer Diskriminierungsformen habe ich 2014 versucht in
-                einem{' '}
+                Politisch bin ich selbst in unterschiedlichen Gruppen
+                organisiert gewesen, war in studentischen
+                Interessensvertretungen engagiert und bin auch jetzt noch in
+                sozialen Bewegungen aktiv. Gesellschaftliche Fragen aus
+                feministischen und antirassistischen Perspektiven zu betrachten
+                ist mir ein zentrales Anliegen. 2014 habe ich dies in meinem{' '}
                 <LinkLight href="https://www.mandelbaum.at/buch.php?id=491&menu=buecher">
                   Buch zu antimuslimischem Rassismus
                 </LinkLight>{' '}
-                zu beantworten.
+                verschriftlicht.
               </Paragraph>
               <Paragraph>
                 Die Neugier auf Gruppenprozesse und gesellschaftspolitische
@@ -214,7 +214,7 @@ const IndexPage = ({ data, location, navigate }) => (
           <Heading>Mein Praxisprofil</Heading>
           <div sx={{ columnCount: [1, 1, 2] }}>
             <Paragraph>
-              Als Supervisorin, Coach und Organisationsberaterin arbeite ich
+              Als Organisationsberaterin, Supervisorin und Coach arbeite ich
               nach den Grundsätzen des{' '}
               <Link href="https://www.oeagg.at/">
                 ÖAGG (Österreichischer Arbeitskreis für Gruppentherapie und
@@ -229,8 +229,8 @@ const IndexPage = ({ data, location, navigate }) => (
                 TTL (Tutoriumsprojekt Trainer*innen Lehrgang)
               </Link>{' '}
               voraus. Gewerblich bin ich eingetragene Unternehmensberaterin
-              (einschließlich Unternehmensorganisation, eingeschränkt auf
-              Supervision und Coaching, GISA-Register 31929097) und Mitglied im{' '}
+              einschließlich Unternehmensorganisation, eingeschränkt auf
+              Supervision und Coaching (GISA-Register 31929097) und Mitglied im{' '}
               <Link href="https://www.wko.at/branchen/w/information-consulting/unternehmensberatung-buchhaltung-informationstechnologie/start.html">
                 Fachverband Unternehmensberatung, Buchhaltung und
                 Informationstechnologie der Wirtschaftskammer Wien
