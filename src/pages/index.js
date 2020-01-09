@@ -70,7 +70,13 @@ const Container = styled('div')(
 const Heading = props => <Styled.h1 as="h3" {...props} />
 
 const Subheading = ({ children, ...props }) => (
-  <summary sx={{ listStyle: 'none' }}>
+  <summary
+    sx={{
+      listStyle: 'none',
+      '&::-webkit-details-marker': { display: 'none' },
+      '&:hover': { cursor: 'pointer' },
+    }}
+  >
     <Styled.h2
       as="h4"
       sx={{ alignItems: 'center', display: 'flex', mb: 0 }}
