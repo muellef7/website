@@ -42,16 +42,17 @@ const Header = ({ location }) => (
             p: 0,
           }}
         >
-          <li sx={{ mx: 3, py: [3, 4, 4] }}>
-            <NavLink to="/">Home</NavLink>
-          </li>
           {location.pathname === '/' ? (
             <li sx={{ mx: 3, py: [3, 4, 4] }}>
               <NavLink as="a" href="#angebote">
                 Angebote
               </NavLink>
             </li>
-          ) : null}
+          ) : (
+            <li sx={{ mx: 3, py: [3, 4, 4] }}>
+              <NavLink to="/">Home</NavLink>
+            </li>
+          )}
           <li sx={{ mx: 3, py: [3, 4, 4] }}>
             <NavLink to="/contact">Kontakt</NavLink>
           </li>
