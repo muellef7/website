@@ -123,7 +123,7 @@ const IndexPage = ({ data, location, navigate }) => (
         <Subtitle>Organisationsberatung. Supervision. Training.</Subtitle>
       </Hero>
 
-      <section sx={{ bg: 'blue.900', color: 'white' }}>
+      <section id="zugang" sx={{ bg: 'blue.900', color: 'white' }}>
         <Container>
           <Heading>Mein Zugang</Heading>
           <div sx={{ columnCount: [1, 1, 2] }}>
@@ -154,7 +154,7 @@ const IndexPage = ({ data, location, navigate }) => (
         </Container>
       </section>
 
-      <section sx={{ bg: 'subtle' }}>
+      <section id="about" sx={{ bg: 'subtle' }}>
         <Container
           sx={{
             display: 'flex',
@@ -221,7 +221,7 @@ const IndexPage = ({ data, location, navigate }) => (
         </Container>
       </section>
 
-      <section sx={{ bg: 'blue.900', color: 'white' }}>
+      <section id="profil" sx={{ bg: 'blue.900', color: 'white' }}>
         <Container>
           <Heading>Mein Praxisprofil</Heading>
           <div sx={{ columnCount: [1, 1, 2] }}>
@@ -253,8 +253,19 @@ const IndexPage = ({ data, location, navigate }) => (
         </Container>
       </section>
 
-      <section>
-        {/* <h3>Angebote</h3> */}
+      <section id="angebote">
+        <h3
+          style={{
+            position: 'absolute',
+            width: 1,
+            height: 1,
+            margin: -1,
+            opacity: 0,
+            zIndex: -1,
+          }}
+        >
+          Angebote
+        </h3>
         {/* Beratungsangebote, Trainings, Diversity-Zertifikate */}
         <Container>
           <ContentWrapper>
@@ -333,7 +344,7 @@ const IndexPage = ({ data, location, navigate }) => (
         </Container>
       </section>
 
-      <section sx={{ bg: 'subtle' }}>
+      <section id="praxis" sx={{ bg: 'subtle' }}>
         <Container>
           <Heading>Praxis</Heading>
           <Paragraph>
@@ -359,7 +370,7 @@ const IndexPage = ({ data, location, navigate }) => (
         </Container>
       </section>
 
-      <section sx={{ bg: 'subtle' }}>
+      <section id="settings-und-preise" sx={{ bg: 'subtle' }}>
         <Container>
           <Heading>Settings und Preise</Heading>
           <Paragraph>
@@ -376,7 +387,7 @@ const IndexPage = ({ data, location, navigate }) => (
         </Container>
       </section>
 
-      <section>
+      <section id="kontakt">
         <Container>
           <Heading>Kontakt</Heading>
           <Paragraph>

@@ -4,7 +4,7 @@ import 'typeface-montserrat'
 import Footer from './Footer'
 import Header from './Header'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <Styled.root
     sx={{
       display: 'grid',
@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
       overflowX: 'hidden',
     }}
   >
-    <Header />
+    <Header location={location} />
     {children}
     <Footer />
   </Styled.root>

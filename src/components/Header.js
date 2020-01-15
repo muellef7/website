@@ -14,7 +14,7 @@ const NavLink = props => (
   />
 )
 
-const Header = () => (
+const Header = ({ location }) => (
   <header
     sx={{
       borderBottomColor: 'subtle',
@@ -45,6 +45,13 @@ const Header = () => (
           <li sx={{ mx: 3, py: [3, 4, 4] }}>
             <NavLink to="/">Home</NavLink>
           </li>
+          {location.pathname === '/' ? (
+            <li sx={{ mx: 3, py: [3, 4, 4] }}>
+              <NavLink as="a" href="#angebote">
+                Angebote
+              </NavLink>
+            </li>
+          ) : null}
           <li sx={{ mx: 3, py: [3, 4, 4] }}>
             <NavLink to="/contact">Kontakt</NavLink>
           </li>
