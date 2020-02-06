@@ -392,7 +392,7 @@ const IndexPage = ({ data, location, navigate }) => (
           <Heading>Kontakt</Heading>
           <Paragraph>
             Wenn Ihr Fragen zu meinem Angebot habt, oder ein Erstgespräch
-            wünscht, dann füllt gerne das Kontaktformular aus oder meldet euch
+            wünscht, dann füllt gerne das Kontaktformular aus oder meldet Euch
             telefonisch unter 0664&nbsp;-&nbsp;2418950.
           </Paragraph>
           <ContactForm navigate={navigate} />
