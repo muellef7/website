@@ -125,31 +125,31 @@ const IndexPage = ({ data, location, navigate }) => (
 
       <section id="zugang" sx={{ bg: 'blue.900', color: 'white' }}>
         <Container>
-          <Heading>Mein Zugang</Heading>
-          <div sx={{ columnCount: [1, 1, 2] }}>
-            <Paragraph>
-              Meine beraterische Tätigkeit ist auf die Klient*innen
-              zugeschnitten, lösungs- und ressourcenorientiert.
-            </Paragraph>
-            <Paragraph>
-              Zentral für mich sind die Wahrnehmung und Reflexion eigener
-              Entwicklungen am Arbeitsplatz, um sich wirksam organisieren und
-              die eigene Rolle finden zu können, stets mit einem Blick auf die
-              Gesellschaft. Dies gilt für Organisationen ebenso wie für Teams,
-              Gruppen und Einzelpersonen.
-            </Paragraph>
-            <Paragraph>
-              Ich arbeite methodenintegrativ, setze meine Schwerpunkte
-              allerdings in den Techniken der{' '}
-              <Link href="http://www.gddg.at/gddg/methode/gruppendynamik">
-                Gruppendynamik
-              </Link>{' '}
-              und jenen des{' '}
-              <Link href="http://www.psychodrama-austria.at/psychodrama/psychodrama-methode/">
-                Psychodramas
-              </Link>
-              .
-            </Paragraph>
+          <div sx={{ mx: [0, 0, 6] }}>
+            <Heading>Mein Zugang</Heading>
+            <div>
+              <Paragraph>
+                Meine beraterische Tätigkeit ist auf die Klient*innen
+                zugeschnitten, lösungs- und ressourcenorientiert. Zentral für
+                mich sind die Wahrnehmung und Reflexion eigener Entwicklungen am
+                Arbeitsplatz, um sich wirksam organisieren und die eigene Rolle
+                finden zu können, stets mit einem Blick auf die Gesellschaft.
+                Dies gilt für Organisationen ebenso wie für Teams, Gruppen und
+                Einzelpersonen.
+              </Paragraph>
+              <Paragraph>
+                Ich arbeite methodenintegrativ, setze meine Schwerpunkte
+                allerdings in den Techniken der{' '}
+                <Link href="http://www.gddg.at/gddg/methode/gruppendynamik">
+                  Gruppendynamik
+                </Link>{' '}
+                und jenen des{' '}
+                <Link href="http://www.psychodrama-austria.at/psychodrama/psychodrama-methode/">
+                  Psychodramas
+                </Link>
+                .
+              </Paragraph>
+            </div>
           </div>
         </Container>
       </section>
@@ -223,32 +223,35 @@ const IndexPage = ({ data, location, navigate }) => (
 
       <section id="profil" sx={{ bg: 'blue.900', color: 'white' }}>
         <Container>
-          <Heading>Mein Beratungsprofil</Heading>
-          <div sx={{ columnCount: [1, 1, 2] }}>
-            <Paragraph>
-              Als Organisationsberaterin, Supervisorin und Coach arbeite ich
-              nach den Grundsätzen des{' '}
-              <Link href="https://www.oeagg.at/">
-                ÖAGG (Österreichischer Arbeitskreis für Gruppentherapie und
-                Gruppendynamik)
-              </Link>{' '}
-              und bin Mitglied der{' '}
-              <Link href="https://www.oevs.or.at/mitglieder/mueller-uri-fanny/">
-                ÖVS (Österreichischer Vereinigung für Supervision)
-              </Link>
-              . Meiner langjährigen Erfahrung als Prozesstrainerin geht der{' '}
-              <Link href="https://etut.oeh.ac.at/trainer_innenliste/">
-                TTL (Tutoriumsprojekt Trainer*innen Lehrgang)
-              </Link>{' '}
-              voraus. Gewerblich bin ich eingetragene Unternehmensberaterin
-              einschließlich Unternehmensorganisation, eingeschränkt auf
-              Supervision und Coaching (GISA-Register 31929097) und Mitglied im{' '}
-              <Link href="https://www.wko.at/branchen/w/information-consulting/unternehmensberatung-buchhaltung-informationstechnologie/start.html">
-                Fachverband Unternehmensberatung, Buchhaltung und
-                Informationstechnologie der Wirtschaftskammer Wien
-              </Link>
-              .
-            </Paragraph>
+          <div sx={{ mx: [0, 0, 6] }}>
+            <Heading>Mein Beratungsprofil</Heading>
+            <div>
+              <Paragraph>
+                Als Organisationsberaterin, Supervisorin und Coach arbeite ich
+                nach den Grundsätzen des{' '}
+                <Link href="https://www.oeagg.at/">
+                  ÖAGG (Österreichischer Arbeitskreis für Gruppentherapie und
+                  Gruppendynamik)
+                </Link>{' '}
+                und bin Mitglied der{' '}
+                <Link href="https://www.oevs.or.at/mitglieder/mueller-uri-fanny/">
+                  ÖVS (Österreichischer Vereinigung für Supervision)
+                </Link>
+                . Meiner langjährigen Erfahrung als Prozesstrainerin geht der{' '}
+                <Link href="https://etut.oeh.ac.at/trainer_innenliste/">
+                  TTL (Tutoriumsprojekt Trainer*innen Lehrgang)
+                </Link>{' '}
+                voraus. Gewerblich bin ich eingetragene Unternehmensberaterin
+                einschließlich Unternehmensorganisation, eingeschränkt auf
+                Supervision und Coaching (GISA-Register 31929097) und Mitglied
+                im{' '}
+                <Link href="https://www.wko.at/branchen/w/information-consulting/unternehmensberatung-buchhaltung-informationstechnologie/start.html">
+                  Fachverband Unternehmensberatung, Buchhaltung und
+                  Informationstechnologie der Wirtschaftskammer Wien
+                </Link>
+                .
+              </Paragraph>
+            </div>
           </div>
         </Container>
       </section>
